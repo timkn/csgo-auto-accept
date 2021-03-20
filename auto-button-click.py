@@ -30,10 +30,17 @@ def parse_input(text: str):
         run()
     elif cmd == "help":
         help_message()
+    elif cmd == "exit":
+        stop()
 
 
 def help_message():
     print("Commands: 'start' the program starts")
+
+
+def stop():
+    print("goodbye")
+    sys.exit(0)
 
 
 def start():
