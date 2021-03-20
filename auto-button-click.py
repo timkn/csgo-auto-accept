@@ -29,7 +29,11 @@ def parse_input(text: str):
     if cmd == "start":
         run()
     elif cmd == "help":
-        help()
+        help_message()
+
+
+def help_message():
+    print("Commands: 'start' the program starts")
 
 
 def start():
